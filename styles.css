@@ -1,0 +1,564 @@
+/*==========
+         Google fonts
+=================== */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*==========
+       Common Style for everyone
+=================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-family: "Raleway", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
+}
+
+.secondary_headerh {
+    color: #181818;
+    font-family: Raleway;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 16px;
+    line-height: 56px;
+    /* 116.667% */
+}
+
+.bold_paragraph {
+    color: #0A1425;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 11px;
+    line-height: 147.5%;
+    /* 26.55px */
+}
+
+.paragraph {
+    color: var(--Text-Secondary, #333);
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.section_padding {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.btn-primary {
+    background-color: #13A958 !important;
+    border-radius: 40px;
+    border: 0;
+    display: flex;
+    padding: 10px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-secondary {
+    background-color: #13A958 !important;
+    border: 0;
+    display: flex;
+    padding: 10px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.pera {
+    color: #707070;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+/*==========-===========================================================================================
+         header area desing
+========================================================= */
+
+.header-area {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #062727;
+}
+
+button.navbar-toggler {
+    border: 0;
+    padding: 0 !important;
+}
+
+span.navbar-toggler-icon {
+    margin-top: 10px !important;
+}
+
+.navbar-toggler:hover {
+    text-decoration: none;
+    border: 0 !important;
+}
+
+
+
+.navbar-nav li a {
+    color: #FFF;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.navbar-nav li a:active {
+
+    color: red;
+}
+
+.navbar-nav li a:hover {
+
+    color: #13A958;
+}
+
+
+.btn_desing {
+    width: 170px;
+    height: 44px;
+    background: #B68C5A;
+    border-radius: 5px;
+    border: 0;
+}
+
+.btn_tow {
+    width: 120px;
+    height: 44px;
+    background: #B68C5A;
+    border: 0;
+}
+
+.input_desing {
+    height: 44px;
+    width: 350px;
+}
+
+
+
+/*==========-===========================================================================================
+         Hero Section
+========================================================= */
+.hero_section {
+    position: relative;
+    width: 100%;
+    height: 924px;
+    background: linear-gradient(270deg, rgba(6, 39, 39, 0) 1.59%, rgba(6, 39, 39, 0.80) 100%), url('images/herobg1.png') lightgray center / cover no-repeat;
+    display: flex;  /* Use flexbox to center items */
+    align-items: center;
+    /* justify-content: center;  */
+    transition: background 1s ease-in-out;
+}
+
+.container.hero_content {
+    color: white; /* Change text color if needed */
+}
+
+.hero_title {
+    color:  #FFF;~
+    font-family: Raleway;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 72px; /* 112.5% */
+    letter-spacing: -4px;
+}
+
+.hero_sub_title {
+    color: var(--White, #FFF);
+    font-family: "Open Sans";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px; 
+    margin-top: 24px;
+}
+
+
+
+
+/* =============-===========================================================================================
+         Feature Posts
+=================================================================================================== */
+
+.feature_section {
+    margin-top: -220px;
+}
+
+
+.feature_posts_container {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.feature_posts {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    flex-wrap: wrap;
+    /* Allow items to wrap */
+}
+
+.feature_box {
+    flex: 0 0 30%;
+    /* Default size for larger screens */
+    margin: 0 10px;
+    opacity: 1;
+    padding: 24px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* Image styling */
+.feature_box img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Active feature box styling */
+.feature_box.active {
+    background-color: #13a958;
+    color: white;
+    opacity: 1;
+    z-index: 2;
+}
+
+.feature_box.active .post_title,
+.feature_box.active .post_date {
+    color: white;
+}
+
+/* Post title styling */
+.post_title {
+    font-size: 24px;
+    color: inherit;
+    /* Inherit color from active or non-active state */
+}
+
+/* Slider Dots */
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot.active {
+    background-color: #13a958;
+}
+
+/* Mobile Styling */
+@media (max-width: 768px) {
+    .feature_posts {
+        justify-content: center;
+        /* Center align items on mobile */
+    }
+
+    .feature_box {
+        flex: 0 0 calc(100% - 10px);
+        /* Full width minus margin */
+        margin: 5px 0;
+        /* Vertical gap between boxes */
+    }
+
+    .feature_box.active {
+        transform: scale(1);
+    }
+}
+
+
+
+/* =============-===========================================================================================
+          About Us  area deshing
+=================================================== */
+
+.mini_title {
+    color: #0A1425;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.3px;
+}
+
+.about-image {
+    width: 676px;
+    height: 609px;
+    /* margin-left: 50px; */
+    /* object-fit: cover; */
+
+    /* Ensures the image maintains its aspect ratio */
+}
+
+.awards_winner {
+
+    border-radius: 6px;
+    border: 1px solid #E5E7EB;
+    display: flex;
+    padding: 24px 16px;
+    align-items: flex-start;
+    gap: 12px;
+    flex: 1 0 0;
+}
+
+.awards_winner_box_title {
+    color: #0A1425;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.awards_winner_box_description {
+    color: #333;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+
+/* ========================================================================================================
+         Discover More
+================================================================================ */
+
+
+.discover_more_section {
+    background-image: url(images/discover.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 450px;
+    width: 100%;
+}
+
+
+.discover_title {
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 61px;
+    /* 127.083% */
+}
+
+
+
+
+
+
+/* =============-===========================================================================================
+         Our History
+=================================================================================================== */
+
+
+.history_title {
+    color: #181818;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 116%;
+    margin-top: 16px;
+}
+
+.history_img {
+    width: 100%;
+    height: 534px;
+
+}
+
+
+
+/* =============-===========================================================================================
+         Our Blogs
+=================================================================================================== */
+
+.our_blog_posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.blog_box {
+    background-color: white;
+    border-radius: 24px;
+    padding: 24px;
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+}
+
+.blog_box img {
+    width: 100%;
+    height: 266px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.post_date {
+    color: var(--Text-Secondary, #333);
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.09px;
+    margin: 10px 0;
+}
+
+.post_title {
+    color: var(--Text-Primary, #0A1425);
+    font-family: "Raleway", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.36px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/* =============-===========================================================================================
+          footer area deshing
+=================================================================================================== */
+/* Footer Section */
+.footer_area {
+    background-color: #1d2b39;
+    /* Adjusted background color */
+    padding: 80px 0;
+    /* Top and bottom padding */
+    color: #cfcfcf;
+    /* Text color */
+}
+
+.footer-padding-top-bottom {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Column Styling */
+.footer-col-1,
+.footer-col-4 {
+    margin-right: 50px;
+    width: 30%;
+    /* 
+    
+    30% width for the first and last columns */
+}
+
+.footer-col-2,
+.footer-col-3 {
+    width: 20%;
+    /* 20% width for the middle columns */
+}
+
+/* Input styling for the newsletter subscription */
+.input-group .form-control {
+    border-radius: 30px 0 0 30px;
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+.input-group .btn-primary {
+    border-radius: 0 30px 30px 0;
+    background-color: #13A958;
+    padding: 10px 30px;
+}
+
+
+@media (max-width: 575px) {
+    .custom-footer-row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-col-1,
+    .footer-col-2,
+    .footer-col-3,
+    .footer-col-4 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+/* Tablet Styles (2 columns) */
+@media (min-width: 576px) and (max-width: 991px) {
+    .custom-footer-row {
+        flex-wrap: wrap;
+    }
+
+    .footer-col-1,
+    .footer-col-2,
+    .footer-col-3,
+    .footer-col-4 {
+        width: 50%;
+        /* Display 2 columns */
+    }
+}
+
+/* Desktop Styles (30%, 20%, 20%, 30%) */
+@media (min-width: 992px) {
+    .custom-footer-row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-col-1,
+    .footer-col-4 {
+        width: 30%;
+    }
+
+    .footer-col-2,
+    .footer-col-3 {
+        width: 20%;
+    }
+}

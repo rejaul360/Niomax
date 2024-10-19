@@ -174,11 +174,11 @@ span.navbar-toggler-icon {
     /* justify-content: center;  */
     /* transition: background 1s ease-in-out; */
     opacity: 0; /* Start fully transparent */
-    animation: fadeIn 6s forwards;
+    animation: fadeZoomIn 6s forwards;
     background-size: 110%;
 }
 
-@keyframes fadeIn {
+@keyframes fadeZoomIn {
     0% {
         opacity: 0;
         background-size:100%;

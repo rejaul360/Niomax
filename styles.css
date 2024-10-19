@@ -184,7 +184,7 @@ span.navbar-toggler-icon {
 
 .hero_title {
     color: #FFF;
-    ~font-family: Raleway;
+    font-family: Raleway;
     font-size: 64px;
     font-style: normal;
     font-weight: 400;
@@ -544,6 +544,7 @@ span.input-group-text.custom-button.text-white {
     font-style: normal;
     font-weight: 400;
     line-height: 32px;
+    margin-right: 200px;
 }
 
 .copyright_text {

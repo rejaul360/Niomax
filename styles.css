@@ -172,7 +172,21 @@ span.navbar-toggler-icon {
     /* Use flexbox to center items */
     align-items: center;
     /* justify-content: center;  */
-    transition: background 1s ease-in-out;
+    /* transition: background 1s ease-in-out; */
+    opacity: 0; /* Start fully transparent */
+    animation: fadeIn 6s forwards;
+    background-size: 110%;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        background-size:100%;
+    }
+    100% {
+        opacity: 1;
+        background-size: 120%;
+    }
 }
 
 .container.hero_content {

@@ -80,6 +80,12 @@
         width: auto;
     }
 
+    .hero_section {
+        height: 700px; /* Allow height to adjust based on content */
+        background-size: cover; /* Ensure background covers the section */
+        animation: none; /* Remove animation on mobile */
+        opacity: 1; /* Set opacity to fully visible */
+    }
 
 
 
@@ -196,6 +202,7 @@
 
         margin-right: 0px !important;
     }
+    
 }
 
 

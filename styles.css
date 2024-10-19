@@ -504,26 +504,72 @@ span.navbar-toggler-icon {
 
 /* Input field */
 .custom-input {
-    border: 1px solid #13A958;      /* Input border color */
-    border-radius: 100px 0 0 10px;   /* Rounded corners on left side */
-    color: white;                   /* Input text color */
-    background-color: transparent;  /* Transparent background */
+    border: 1px solid #13A958;
+    /* Input border color */
+    border-radius: 10px 0 0 10px;
+    /* Rounded corners on left side */
+    color: white;
+    /* Input text color */
+    background-color: transparent;
+    /* Transparent background */
 }
 
 /* Placeholder text color */
 .custom-input::placeholder {
-    color: white;                   /* White placeholder text */
+    color: white;
+    /* White placeholder text */
 }
 
 /* Button */
 .custom-button {
-    background-color: #13A958;      /* Button background color */
-    color: white;                   /* Button text color */
-    border: 1px solid #13A958;      /* Same border color as input */
-    border-radius: 0 10px 10px 0;   /* Rounded corners on right side */
+    background-color: #13A958;
+    /* Button background color */
+    color: white;
+    /* Button text color */
+    border: 1px solid #13A958;
+    /* Same border color as input */
+    border-radius: 0 10px 10px 0;
+    /* Rounded corners on right side */
 }
 
 
 span.input-group-text.custom-button.text-white {
     background: #13A958;
+}
+
+.footer_paragraph {
+    color: #F7F8F9;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.copyright_text {
+    color: #FFF;
+    text-align: center;
+    font-family: "Raleway";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.icon_list{
+    display: flex;
+    gap: 10px !important;
+}
+
+.icon_list .footer_icon {
+
+    border: 1px solid white; 
+    border-radius: 100%; 
+    padding: 10px;
+}
+
+.icon_list .footer_icon:hover {
+
+    border: 1px solid #13a958; 
+    background-color: #13a958;
 }
